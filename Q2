@@ -1,0 +1,3 @@
+rule = ["The", "Rule", "of", "72", "is", "a", "great", "way", "to", "estimate", "how", "your", "investment", "will", "grow", "over", "time", "!!!"]
+rule_lower = [x.lower() for x in rule if x not in ('!!!')]
+print(rule_lower)
