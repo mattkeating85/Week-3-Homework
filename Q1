@@ -1,0 +1,11 @@
+## Matt Keating's Present Value Function
+
+def pv_calc(future_value, years, inflation_rate):
+    pv_list = []
+    while years > 0:
+        present_value = future_value / ((1+inflation_rate) ** (years-1))
+        pv_list.append(present_value)
+        years -= 1
+    return(pv_list)
+    
+pv_calc(100, 10, 0.05)
